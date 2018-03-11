@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Z1u-Lt-uaC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nWs-wx-wSP">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -174,7 +174,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bpt-Gp-dVR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9" y="1594"/>
+            <point key="canvasLocation" x="118" y="1594"/>
         </scene>
         <!--Recover Pass View Controller-->
         <scene sceneID="vyZ-Sy-NvN">
@@ -222,7 +222,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uBO-vF-Rws" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1158" y="1594"/>
+            <point key="canvasLocation" x="785" y="1594"/>
         </scene>
         <!--User Settings-->
         <scene sceneID="SK8-CV-ML8">
@@ -241,7 +241,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NXf-gC-fYB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2201" y="2031"/>
+            <point key="canvasLocation" x="2201" y="1981"/>
         </scene>
         <!--User Profile-->
         <scene sceneID="otF-sm-bvq">
@@ -272,7 +272,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Ubf-fc-nud" kind="relationship" relationship="viewControllers" id="hV7-db-OGX"/>
+                        <segue destination="Rym-xQ-oMP" kind="relationship" relationship="viewControllers" id="gWL-E1-5MB"/>
                         <segue destination="Unt-hF-veq" kind="relationship" relationship="viewControllers" id="zrG-eQ-JgN"/>
                         <segue destination="HMr-4d-K8q" kind="relationship" relationship="viewControllers" id="mo4-2p-kTS"/>
                     </connections>
@@ -281,93 +281,44 @@
             </objects>
             <point key="canvasLocation" x="1250" y="841"/>
         </scene>
-        <!--List of added children-->
-        <scene sceneID="9OD-zy-g3d">
+        <!--List of children-->
+        <scene sceneID="bht-8r-kQe">
             <objects>
-                <tableViewController id="IUG-KN-ebd" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="F9k-eL-Sgu">
+                <tableViewController id="duo-hN-FnK" customClass="ChildListTableTableViewController" customModule="ChildrenMonitoringSystem" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="W6D-Tl-oUb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="P4I-sr-sS3">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="child_cell" id="2LK-vl-MHS">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="P4I-sr-sS3" id="Agh-71-bEW">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2LK-vl-MHS" id="nOM-eu-JrO">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="mQk-Yj-iyq" kind="show" id="Ns9-Oa-l87"/>
+                                    <segue destination="mQk-Yj-iyq" kind="show" id="adm-yq-V5m"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="IUG-KN-ebd" id="key-cc-Vub"/>
-                            <outlet property="delegate" destination="IUG-KN-ebd" id="1zw-Gz-gcx"/>
+                            <outlet property="dataSource" destination="duo-hN-FnK" id="Q4C-Cb-3QS"/>
+                            <outlet property="delegate" destination="duo-hN-FnK" id="rHq-MO-nXK"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="List of added children" id="ijt-rd-Hjc">
-                        <barButtonItem key="backBarButtonItem" title="Child List" id="Tu4-g3-SYf"/>
+                    <navigationItem key="navigationItem" title="List of children" id="vHG-ad-CdU">
+                        <barButtonItem key="backBarButtonItem" title="Child List" id="dUK-5l-W4e"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="Add1" id="Yng-Vp-oYx">
                             <connections>
-                                <segue destination="amQ-aF-Zpx" kind="show" id="WoX-IQ-5Ly"/>
+                                <segue destination="eip-oH-0I7" kind="showDetail" id="h2f-Ei-f1A"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="leG-6G-Rma" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nxS-2N-FOF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2724" y="505.09745127436287"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="dCz-Of-IdU">
-            <objects>
-                <viewController id="amQ-aF-Zpx" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="7g4-Op-WPK"/>
-                        <viewControllerLayoutGuide type="bottom" id="m4K-Zs-Fjj"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Oak-cK-d4K">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ChildName" translatesAutoresizingMaskIntoConstraints="NO" id="Rb7-im-rpU">
-                                <rect key="frame" x="43" y="162" width="44" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Child Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aza-se-0Jb">
-                                <rect key="frame" x="89" y="163" width="231" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ChildLastname_Firstname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7sU-d4-3EG">
-                                <rect key="frame" x="89" y="225" width="231" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hP7-gC-zh5">
-                                <rect key="frame" x="105" y="307" width="145" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Add Child" image="Add">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CLF" translatesAutoresizingMaskIntoConstraints="NO" id="f8Z-3b-Pm8">
-                                <rect key="frame" x="43" y="223" width="44" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1Sa-Uq-ynV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3573.5999999999999" y="503.29835082458777"/>
+            <point key="canvasLocation" x="3014" y="464"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="i6T-Qv-SmZ">
@@ -408,6 +359,74 @@
             </objects>
             <point key="canvasLocation" x="3574" y="1281"/>
         </scene>
+        <!--Add Child View Controller-->
+        <scene sceneID="3XD-Ij-XWm">
+            <objects>
+                <viewController id="eip-oH-0I7" customClass="AddChildViewController" customModule="ChildrenMonitoringSystem" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1aM-lm-Xq0"/>
+                        <viewControllerLayoutGuide type="bottom" id="0ZU-pc-ObA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WvW-uJ-e7L">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ChildName" translatesAutoresizingMaskIntoConstraints="NO" id="aFJ-KM-0TG">
+                                <rect key="frame" x="52" y="134" width="44" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Child Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qhu-42-tNM">
+                                <rect key="frame" x="98" y="135" width="231" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ChildLastname_Firstname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4JK-2A-ux6">
+                                <rect key="frame" x="98" y="197" width="231" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lh8-ch-O79">
+                                <rect key="frame" x="114" y="279" width="145" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Child" image="Add">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addChildBTN:" destination="eip-oH-0I7" eventType="touchUpInside" id="BQO-M0-Cjl"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CLF" translatesAutoresizingMaskIntoConstraints="NO" id="Mx8-Sp-Bu5">
+                                <rect key="frame" x="52" y="195" width="44" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5D-te-SNa">
+                                <rect key="frame" x="114" y="353" width="145" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cancel" image="cancel">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelBTN:" destination="eip-oH-0I7" eventType="touchUpInside" id="zxs-NM-6uY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <outlet property="childIDTF" destination="4JK-2A-ux6" id="nbw-N6-8gi"/>
+                        <outlet property="childNameTF" destination="qhu-42-tNM" id="xLI-9Y-nBe"/>
+                        <segue destination="GT1-eK-JcQ" kind="unwind" identifier="unwindSegue" unwindAction="unwindSegueWithSegue:" id="ymn-yT-YXI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YZH-CC-z0m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="GT1-eK-JcQ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3868" y="464"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="PNY-Py-Wj0">
             <objects>
@@ -426,24 +445,24 @@
             </objects>
             <point key="canvasLocation" x="-438" y="841"/>
         </scene>
-        <!--Add Child-->
-        <scene sceneID="OSt-H6-gZu">
+        <!--AddChild-->
+        <scene sceneID="N0p-U3-Q2h">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ubf-fc-nud" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Add Child" image="addChild" selectedImage="addChild" id="XFT-Vh-cqx"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rym-xQ-oMP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="AddChild" image="addChild" id="HtL-kk-kMA"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gaV-eb-pAm">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Dax-2I-Tas">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="IUG-KN-ebd" kind="relationship" relationship="rootViewController" id="hwh-gv-G01"/>
+                        <segue destination="duo-hN-FnK" kind="relationship" relationship="rootViewController" id="svQ-a0-1tc"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Rcm-NE-71U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NaX-Zx-J3m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1962" y="505"/>
+            <point key="canvasLocation" x="2201" y="464"/>
         </scene>
     </scenes>
     <resources>
@@ -453,6 +472,7 @@
         <image name="CLF" width="20" height="20"/>
         <image name="ChildName" width="20" height="20"/>
         <image name="addChild" width="20" height="20"/>
+        <image name="cancel" width="22" height="22"/>
         <image name="createAccount" width="626" height="626"/>
         <image name="email" width="20" height="20"/>
         <image name="forgotPassword" width="300" height="300"/>
