@@ -9,7 +9,7 @@ import UIKit
 
 class ChildListTableTableViewController: UITableViewController {
     var data : [AddChild]?
-    let whereClause = "emailID = '\(AppDelegate.DBInstance.backendless.userService.currentUser.email as String)'"
+    //let whereClause = "emailID = '\(AppDelegate.DBInstance.backendless.userService.currentUser.email as String)'"
     let queryBuilder = DataQueryBuilder()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,11 +33,11 @@ class ChildListTableTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       queryBuilder!.setWhereClause(whereClause)
+       //queryBuilder!.setWhereClause(whereClause)
         data = AppDelegate.DBInstance.backendless.data.of(AddChild.self).find(queryBuilder) as? [AddChild]
         return (data?.count)!
     }

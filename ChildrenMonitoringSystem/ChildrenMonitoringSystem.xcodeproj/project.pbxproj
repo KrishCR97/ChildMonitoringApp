@@ -17,6 +17,7 @@
 		3F0D806D2053D03800E3BAFE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0D806C2053D03800E3BAFE /* RegisterViewController.swift */; };
 		3F0D806F2053D05100E3BAFE /* RecoverPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0D806E2053D05100E3BAFE /* RecoverPassViewController.swift */; };
 		3F0D80732053EDBF00E3BAFE /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0D80722053EDBF00E3BAFE /* BaseTabBarController.swift */; };
+		3FB965FE2055D350003BFEB3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB965FD2055D350003BFEB3 /* ProfileViewController.swift */; };
 		3FDDE8952054F5B000EBF4C8 /* AddChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDDE8942054F5B000EBF4C8 /* AddChild.swift */; };
 		3FDDE8972054F9AF00EBF4C8 /* AddChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDDE8962054F9AF00EBF4C8 /* AddChildViewController.swift */; };
 		3FDDE8992054FEB900EBF4C8 /* ChildListTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDDE8982054FEB900EBF4C8 /* ChildListTableTableViewController.swift */; };
@@ -37,6 +38,7 @@
 		3F0D806C2053D03800E3BAFE /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		3F0D806E2053D05100E3BAFE /* RecoverPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPassViewController.swift; sourceTree = "<group>"; };
 		3F0D80722053EDBF00E3BAFE /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		3FB965FD2055D350003BFEB3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3FDDE8942054F5B000EBF4C8 /* AddChild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChild.swift; sourceTree = "<group>"; };
 		3FDDE8962054F9AF00EBF4C8 /* AddChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChildViewController.swift; sourceTree = "<group>"; };
 		3FDDE8982054FEB900EBF4C8 /* ChildListTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildListTableTableViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				3FDDE8942054F5B000EBF4C8 /* AddChild.swift */,
 				3FDDE8962054F9AF00EBF4C8 /* AddChildViewController.swift */,
 				3FDDE8982054FEB900EBF4C8 /* ChildListTableTableViewController.swift */,
+				3FB965FD2055D350003BFEB3 /* ProfileViewController.swift */,
 			);
 			path = ChildrenMonitoringSystem;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				3F0D806D2053D03800E3BAFE /* RegisterViewController.swift in Sources */,
 				0F22E1B11E8407D1004B722A /* ViewController.swift in Sources */,
 				3FDDE8992054FEB900EBF4C8 /* ChildListTableTableViewController.swift in Sources */,
+				3FB965FE2055D350003BFEB3 /* ProfileViewController.swift in Sources */,
 				0F22E1AF1E8407D1004B722A /* AppDelegate.swift in Sources */,
 				3F0D806F2053D05100E3BAFE /* RecoverPassViewController.swift in Sources */,
 				3FDDE8952054F5B000EBF4C8 /* AddChild.swift in Sources */,
