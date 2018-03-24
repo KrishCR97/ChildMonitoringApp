@@ -30,6 +30,7 @@ class LoginViewController: UIViewController {
                 let mainStoryboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                 let viewController = mainStoryboard.instantiateViewController(withIdentifier: "BaseTabBarController") as! BaseTabBarController
                 appDelegate.window?.rootViewController = viewController
+                AppDelegate.password = passwordTF.text!
                 
             }
             else {
