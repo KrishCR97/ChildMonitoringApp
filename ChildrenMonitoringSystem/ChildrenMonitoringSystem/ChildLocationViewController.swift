@@ -54,6 +54,7 @@ class ChildLocationViewController : UIViewController,CLLocationManagerDelegate {
     
     //https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=API_KEY
     //https://developers.google.com/maps/documentation/javascript/examples/geocoding-reverse
+    //AIzaSyAk8iSRr_NzJ_5Cajiobss0Z0IPJ28w4XY
 
 }
 

@@ -20,6 +20,7 @@
 		3F97B6972066EF6300F25006 /* UserSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F97B6962066EF6300F25006 /* UserSettingsViewController.swift */; };
 		3F97B6992066EFD900F25006 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F97B6982066EFD900F25006 /* ChangePasswordViewController.swift */; };
 		3F97B69B2066EFEC00F25006 /* ChangeUserNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F97B69A2066EFEC00F25006 /* ChangeUserNameViewController.swift */; };
+		3F97B69D20670DC900F25006 /* GetLocationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F97B69C20670DC900F25006 /* GetLocationInfo.swift */; };
 		3FB965FE2055D350003BFEB3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB965FD2055D350003BFEB3 /* ProfileViewController.swift */; };
 		3FB966002056C21B003BFEB3 /* ChildLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB965FF2056C21B003BFEB3 /* ChildLocation.swift */; };
 		3FB966022056C2DD003BFEB3 /* ChildLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB966012056C2DD003BFEB3 /* ChildLocationViewController.swift */; };
@@ -47,6 +48,7 @@
 		3F97B6962066EF6300F25006 /* UserSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsViewController.swift; sourceTree = "<group>"; };
 		3F97B6982066EFD900F25006 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		3F97B69A2066EFEC00F25006 /* ChangeUserNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserNameViewController.swift; sourceTree = "<group>"; };
+		3F97B69C20670DC900F25006 /* GetLocationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLocationInfo.swift; sourceTree = "<group>"; };
 		3FB965FD2055D350003BFEB3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3FB965FF2056C21B003BFEB3 /* ChildLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildLocation.swift; sourceTree = "<group>"; };
 		3FB966012056C2DD003BFEB3 /* ChildLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildLocationViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				3F97B6962066EF6300F25006 /* UserSettingsViewController.swift */,
 				3F97B6982066EFD900F25006 /* ChangePasswordViewController.swift */,
 				3F97B69A2066EFEC00F25006 /* ChangeUserNameViewController.swift */,
+				3F97B69C20670DC900F25006 /* GetLocationInfo.swift */,
 			);
 			path = ChildrenMonitoringSystem;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				3FB965FE2055D350003BFEB3 /* ProfileViewController.swift in Sources */,
 				3FB966002056C21B003BFEB3 /* ChildLocation.swift in Sources */,
 				3F97B69B2066EFEC00F25006 /* ChangeUserNameViewController.swift in Sources */,
+				3F97B69D20670DC900F25006 /* GetLocationInfo.swift in Sources */,
 				0F22E1AF1E8407D1004B722A /* AppDelegate.swift in Sources */,
 				3F0D806F2053D05100E3BAFE /* RecoverPassViewController.swift in Sources */,
 				3FB966022056C2DD003BFEB3 /* ChildLocationViewController.swift in Sources */,
