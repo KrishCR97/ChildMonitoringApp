@@ -68,6 +68,9 @@ class ChildListTableTableViewController: UITableViewController {
         
         
     }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(data?[indexPath.row].objectId!)
+    }
 
     /*
     // Override to support rearranging the table view.

@@ -29,6 +29,8 @@
 		3FDDE8972054F9AF00EBF4C8 /* AddChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDDE8962054F9AF00EBF4C8 /* AddChildViewController.swift */; };
 		3FDDE8992054FEB900EBF4C8 /* ChildListTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDDE8982054FEB900EBF4C8 /* ChildListTableTableViewController.swift */; };
 		64E9712313F1A49CDB2BAE3E /* libPods-ChildrenMonitoringSystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 783151FBD2475EE823CBD6EB /* libPods-ChildrenMonitoringSystem.a */; };
+		9C9C9C43207592DE00613A92 /* UpdateIntervalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9C9C42207592DE00613A92 /* UpdateIntervalViewController.swift */; };
+		9C9C9C45207598D000613A92 /* ChildLocationHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9C9C44207598D000613A92 /* ChildLocationHistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		3FDDE8982054FEB900EBF4C8 /* ChildListTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildListTableTableViewController.swift; sourceTree = "<group>"; };
 		4A2A3A41E22795C78FC1AD69 /* Pods-ChildrenMonitoringSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChildrenMonitoringSystem.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChildrenMonitoringSystem/Pods-ChildrenMonitoringSystem.release.xcconfig"; sourceTree = "<group>"; };
 		783151FBD2475EE823CBD6EB /* libPods-ChildrenMonitoringSystem.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChildrenMonitoringSystem.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C9C9C42207592DE00613A92 /* UpdateIntervalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateIntervalViewController.swift; sourceTree = "<group>"; };
+		9C9C9C44207598D000613A92 /* ChildLocationHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildLocationHistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 				3F97B6982066EFD900F25006 /* ChangePasswordViewController.swift */,
 				3F97B69A2066EFEC00F25006 /* ChangeUserNameViewController.swift */,
 				3F97B69C20670DC900F25006 /* GetLocationInfo.swift */,
+				9C9C9C42207592DE00613A92 /* UpdateIntervalViewController.swift */,
+				9C9C9C44207598D000613A92 /* ChildLocationHistoryViewController.swift */,
 			);
 			path = ChildrenMonitoringSystem;
 			sourceTree = "<group>";
@@ -266,6 +272,7 @@
 				3FDDE8972054F9AF00EBF4C8 /* AddChildViewController.swift in Sources */,
 				3F97B6972066EF6300F25006 /* UserSettingsViewController.swift in Sources */,
 				3F97B6992066EFD900F25006 /* ChangePasswordViewController.swift in Sources */,
+				9C9C9C43207592DE00613A92 /* UpdateIntervalViewController.swift in Sources */,
 				3F0D806B2053D02900E3BAFE /* LoginViewController.swift in Sources */,
 				3F0D806D2053D03800E3BAFE /* RegisterViewController.swift in Sources */,
 				0F22E1B11E8407D1004B722A /* ViewController.swift in Sources */,
@@ -276,6 +283,7 @@
 				3F97B69D20670DC900F25006 /* GetLocationInfo.swift in Sources */,
 				0F22E1AF1E8407D1004B722A /* AppDelegate.swift in Sources */,
 				3F0D806F2053D05100E3BAFE /* RecoverPassViewController.swift in Sources */,
+				9C9C9C45207598D000613A92 /* ChildLocationHistoryViewController.swift in Sources */,
 				3FB966022056C2DD003BFEB3 /* ChildLocationViewController.swift in Sources */,
 				3FDDE8952054F5B000EBF4C8 /* AddChild.swift in Sources */,
 				3F0D80692053BEB200E3BAFE /* DatabaseManager.swift in Sources */,
