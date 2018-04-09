@@ -8,6 +8,7 @@
 import UIKit
 
 class ChildListTableTableViewController: UITableViewController {
+    
     var data : [AddChild]?
     let whereClause = "emailID = '\(AppDelegate.DBInstance.backendless.userService.currentUser.email as String)'"
     let queryBuilder = DataQueryBuilder()
@@ -69,7 +70,11 @@ class ChildListTableTableViewController: UITableViewController {
         
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(data?[indexPath.row].objectId!)
+        print("CLicked")
+        ChildLocationHistoryViewController.id = (data?[indexPath.row].childID!)!
+        //AppDelegate.childParID = (data?[indexPath.row].childID!)!
+        //print(AppDelegate.childParID)
+        //ChildListTableTableViewController.childID = (data?[indexPath.row].childID!)!
     }
 
     /*

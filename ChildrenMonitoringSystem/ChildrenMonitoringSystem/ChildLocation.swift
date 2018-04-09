@@ -13,4 +13,5 @@ class ChildLocation : NSObject {
     var longitude : String?
     var objectId : String?
     var childLocationInfo : String?
+    
 }

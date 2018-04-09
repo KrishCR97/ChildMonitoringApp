@@ -13,7 +13,8 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var userNameTF: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        emailIDTF.text = AppDelegate.DBInstance.backendless.userService.currentUser.email as? String
+        userNameTF.text = AppDelegate.DBInstance.backendless.userService.currentUser.name as? String
         // Do any additional setup after loading the view.
     }
     override func didReceiveMemoryWarning() {

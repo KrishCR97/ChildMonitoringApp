@@ -17,6 +17,7 @@
 		3F0D806D2053D03800E3BAFE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0D806C2053D03800E3BAFE /* RegisterViewController.swift */; };
 		3F0D806F2053D05100E3BAFE /* RecoverPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0D806E2053D05100E3BAFE /* RecoverPassViewController.swift */; };
 		3F0D80732053EDBF00E3BAFE /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0D80722053EDBF00E3BAFE /* BaseTabBarController.swift */; };
+		3F6E1593207A741C00C7A620 /* MapPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E1592207A741C00C7A620 /* MapPinViewController.swift */; };
 		3F97B6972066EF6300F25006 /* UserSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F97B6962066EF6300F25006 /* UserSettingsViewController.swift */; };
 		3F97B6992066EFD900F25006 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F97B6982066EFD900F25006 /* ChangePasswordViewController.swift */; };
 		3F97B69B2066EFEC00F25006 /* ChangeUserNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F97B69A2066EFEC00F25006 /* ChangeUserNameViewController.swift */; };
@@ -25,6 +26,7 @@
 		3FB966002056C21B003BFEB3 /* ChildLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB965FF2056C21B003BFEB3 /* ChildLocation.swift */; };
 		3FB966022056C2DD003BFEB3 /* ChildLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB966012056C2DD003BFEB3 /* ChildLocationViewController.swift */; };
 		3FB966042056C427003BFEB3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB966032056C427003BFEB3 /* CoreLocation.framework */; };
+		3FC66ECE207A4138003E7860 /* ChildLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC66ECD207A4138003E7860 /* ChildLoginViewController.swift */; };
 		3FDDE8952054F5B000EBF4C8 /* AddChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDDE8942054F5B000EBF4C8 /* AddChild.swift */; };
 		3FDDE8972054F9AF00EBF4C8 /* AddChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDDE8962054F9AF00EBF4C8 /* AddChildViewController.swift */; };
 		3FDDE8992054FEB900EBF4C8 /* ChildListTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDDE8982054FEB900EBF4C8 /* ChildListTableTableViewController.swift */; };
@@ -47,6 +49,7 @@
 		3F0D806C2053D03800E3BAFE /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		3F0D806E2053D05100E3BAFE /* RecoverPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPassViewController.swift; sourceTree = "<group>"; };
 		3F0D80722053EDBF00E3BAFE /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		3F6E1592207A741C00C7A620 /* MapPinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPinViewController.swift; sourceTree = "<group>"; };
 		3F97B6962066EF6300F25006 /* UserSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsViewController.swift; sourceTree = "<group>"; };
 		3F97B6982066EFD900F25006 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		3F97B69A2066EFEC00F25006 /* ChangeUserNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserNameViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +58,7 @@
 		3FB965FF2056C21B003BFEB3 /* ChildLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildLocation.swift; sourceTree = "<group>"; };
 		3FB966012056C2DD003BFEB3 /* ChildLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildLocationViewController.swift; sourceTree = "<group>"; };
 		3FB966032056C427003BFEB3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3FC66ECD207A4138003E7860 /* ChildLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildLoginViewController.swift; sourceTree = "<group>"; };
 		3FDDE8942054F5B000EBF4C8 /* AddChild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChild.swift; sourceTree = "<group>"; };
 		3FDDE8962054F9AF00EBF4C8 /* AddChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChildViewController.swift; sourceTree = "<group>"; };
 		3FDDE8982054FEB900EBF4C8 /* ChildListTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildListTableTableViewController.swift; sourceTree = "<group>"; };
@@ -114,13 +118,15 @@
 				3FB965FD2055D350003BFEB3 /* ProfileViewController.swift */,
 				3FDDE8942054F5B000EBF4C8 /* AddChild.swift */,
 				3FB965FF2056C21B003BFEB3 /* ChildLocation.swift */,
-				3FB966012056C2DD003BFEB3 /* ChildLocationViewController.swift */,
 				3F97B6962066EF6300F25006 /* UserSettingsViewController.swift */,
 				3F97B6982066EFD900F25006 /* ChangePasswordViewController.swift */,
 				3F97B69A2066EFEC00F25006 /* ChangeUserNameViewController.swift */,
 				3F97B69C20670DC900F25006 /* GetLocationInfo.swift */,
 				9C9C9C42207592DE00613A92 /* UpdateIntervalViewController.swift */,
 				9C9C9C44207598D000613A92 /* ChildLocationHistoryViewController.swift */,
+				3FC66ECD207A4138003E7860 /* ChildLoginViewController.swift */,
+				3FB966012056C2DD003BFEB3 /* ChildLocationViewController.swift */,
+				3F6E1592207A741C00C7A620 /* MapPinViewController.swift */,
 			);
 			path = ChildrenMonitoringSystem;
 			sourceTree = "<group>";
@@ -269,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F0D80732053EDBF00E3BAFE /* BaseTabBarController.swift in Sources */,
+				3FC66ECE207A4138003E7860 /* ChildLoginViewController.swift in Sources */,
 				3FDDE8972054F9AF00EBF4C8 /* AddChildViewController.swift in Sources */,
 				3F97B6972066EF6300F25006 /* UserSettingsViewController.swift in Sources */,
 				3F97B6992066EFD900F25006 /* ChangePasswordViewController.swift in Sources */,
@@ -282,6 +289,7 @@
 				3F97B69B2066EFEC00F25006 /* ChangeUserNameViewController.swift in Sources */,
 				3F97B69D20670DC900F25006 /* GetLocationInfo.swift in Sources */,
 				0F22E1AF1E8407D1004B722A /* AppDelegate.swift in Sources */,
+				3F6E1593207A741C00C7A620 /* MapPinViewController.swift in Sources */,
 				3F0D806F2053D05100E3BAFE /* RecoverPassViewController.swift in Sources */,
 				9C9C9C45207598D000613A92 /* ChildLocationHistoryViewController.swift in Sources */,
 				3FB966022056C2DD003BFEB3 /* ChildLocationViewController.swift in Sources */,

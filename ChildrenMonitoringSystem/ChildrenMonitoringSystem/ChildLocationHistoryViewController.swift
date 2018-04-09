@@ -6,20 +6,33 @@
 //
 
 import UIKit
+import MapKit
 
 class ChildLocationHistoryViewController: UIViewController,UITableViewDataSource{
-    var names : [String] = ["One" , "Two" , "Three"]
-    var numbers : [Int] = [1,2,3]
+
+    @IBOutlet weak var map: MKMapView!
+    static var id : String?
+    var data : [ChildLocation]?
+    
+    
+    let queryBuilder = DataQueryBuilder()
+
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return names.count
+        let whereClause = "childID = '\(ChildLocationHistoryViewController.id!)'"
+        queryBuilder!.setWhereClause(whereClause)
+        data = AppDelegate.DBInstance.backendless.data.of(ChildLocation.self).find(queryBuilder) as? [ChildLocation]
+        print(whereClause)
+        return data!.count
+        //return names.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell_loc")
-        let nameLBL = cell?.viewWithTag(101) as! UILabel
+       let nameLBL = cell?.viewWithTag(101) as! UILabel
         let numberLBL = cell?.viewWithTag(102) as! UILabel
-        nameLBL.text = names[indexPath.row]
-        numberLBL.text = "\(numbers[indexPath.row])"
+        nameLBL.text = data![indexPath.row].childLocationInfo
+        numberLBL.text = "Time goes here"
         return cell!
     }
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -29,10 +42,32 @@ class ChildLocationHistoryViewController: UIViewController,UITableViewDataSource
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let whereClause = "childID = '\(ChildLocationHistoryViewController.id!)'"
+        queryBuilder!.setWhereClause(whereClause)
+        data = AppDelegate.DBInstance.backendless.data.of(ChildLocation.self).find(queryBuilder) as? [ChildLocation]
+        var locationArr : [CLLocationCoordinate2D] = []
+        var regionArr : [MKCoordinateRegion] = []
+        var annotationArr : [MKPointAnnotation] = []
+        
+        var span : MKCoordinateSpan = MKCoordinateSpanMake(0.5, 0.5)
+        for child in data! {
+            locationArr.append(CLLocationCoordinate2D(latitude : Double(child.latitude!)!,longitude: Double(child.longitude!)!))
+           // break
+        }
+//        locationArr.append(CLLocationCoordinate2D(latitude : 37.760122,longitude: -122.468158))
+//        locationArr.append(CLLocationCoordinate2D(latitude: 37.6879, longitude: -122.4702))
+        for num in 0..<locationArr.count{
+            regionArr.append(MKCoordinateRegionMake(locationArr[num], span))
+            map.setRegion(regionArr[num], animated: true)
+            var annotation = MKPointAnnotation()
+            annotation.coordinate = locationArr[num]
+            annotation.title = "Loc"
+            annotation.subtitle = "What?"
+            annotationArr.append(annotation)
+            map.addAnnotation(annotationArr[num])
         // Do any additional setup after loading the view.
     }
-
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

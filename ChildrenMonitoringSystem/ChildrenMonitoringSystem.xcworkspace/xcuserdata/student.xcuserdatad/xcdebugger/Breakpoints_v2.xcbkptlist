@@ -154,11 +154,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ChildrenMonitoringSystem/ChildListTableTableViewController.swift"
-            timestampString = "543624303.519962"
+            timestampString = "544899442.829336"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
             landmarkName = "ChildListTableTableViewController"
             landmarkType = "3">
             <Locations>
@@ -169,13 +169,13 @@
                   symbolName = "variable initialization expression of ChildrenMonitoringSystem.ChildListTableTableViewController.whereClause : Swift.String"
                   moduleName = "ChildrenMonitoringSystem"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/student/Desktop/Repo/ChildMonitoringApp/ChildrenMonitoringSystem/ChildrenMonitoringSystem/ChildListTableTableViewController.swift"
-                  timestampString = "542446477.874513"
+                  urlString = "file:///Users/student/Desktop/ChildMonitoringApp/ChildrenMonitoringSystem/ChildrenMonitoringSystem/ChildListTableTableViewController.swift"
+                  timestampString = "544889731.337389"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "4">
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "19">
                </Location>
                <Location
                   shouldBeEnabled = "No"
@@ -184,13 +184,13 @@
                   symbolName = "ChildrenMonitoringSystem.ChildListTableTableViewController.whereClause.getter : Swift.String"
                   moduleName = "ChildrenMonitoringSystem"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/student/Desktop/Repo/ChildMonitoringApp/ChildrenMonitoringSystem/ChildrenMonitoringSystem/ChildListTableTableViewController.swift"
-                  timestampString = "542446477.877454"
+                  urlString = "file:///Users/student/Desktop/ChildMonitoringApp/ChildrenMonitoringSystem/ChildrenMonitoringSystem/ChildListTableTableViewController.swift"
+                  timestampString = "544889731.33922"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "125">
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "129">
                </Location>
                <Location
                   shouldBeEnabled = "No"
@@ -199,13 +199,13 @@
                   symbolName = "ChildrenMonitoringSystem.ChildListTableTableViewController.init(style: __C.UITableViewStyle) -&gt; ChildrenMonitoringSystem.ChildListTableTableViewController"
                   moduleName = "ChildrenMonitoringSystem"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/student/Desktop/Repo/ChildMonitoringApp/ChildrenMonitoringSystem/ChildrenMonitoringSystem/ChildListTableTableViewController.swift"
-                  timestampString = "542446477.881016"
+                  urlString = "file:///Users/student/Desktop/ChildMonitoringApp/ChildrenMonitoringSystem/ChildrenMonitoringSystem/ChildListTableTableViewController.swift"
+                  timestampString = "544889731.340982"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "163">
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "147">
                </Location>
                <Location
                   shouldBeEnabled = "No"
@@ -214,13 +214,13 @@
                   symbolName = "ChildrenMonitoringSystem.ChildListTableTableViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; ChildrenMonitoringSystem.ChildListTableTableViewController"
                   moduleName = "ChildrenMonitoringSystem"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/student/Desktop/Repo/ChildMonitoringApp/ChildrenMonitoringSystem/ChildrenMonitoringSystem/ChildListTableTableViewController.swift"
-                  timestampString = "542446477.884377"
+                  urlString = "file:///Users/student/Desktop/ChildMonitoringApp/ChildrenMonitoringSystem/ChildrenMonitoringSystem/ChildListTableTableViewController.swift"
+                  timestampString = "544889731.342768"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "216">
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "212">
                </Location>
                <Location
                   shouldBeEnabled = "No"
@@ -229,13 +229,13 @@
                   symbolName = "ChildrenMonitoringSystem.ChildListTableTableViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;ChildrenMonitoringSystem.ChildListTableTableViewController&gt;"
                   moduleName = "ChildrenMonitoringSystem"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/student/Desktop/Repo/ChildMonitoringApp/ChildrenMonitoringSystem/ChildrenMonitoringSystem/ChildListTableTableViewController.swift"
-                  timestampString = "542446477.888141"
+                  urlString = "file:///Users/student/Desktop/ChildMonitoringApp/ChildrenMonitoringSystem/ChildrenMonitoringSystem/ChildListTableTableViewController.swift"
+                  timestampString = "544889731.3445899"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "151">
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "147">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -247,11 +247,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ChildrenMonitoringSystem/ChildListTableTableViewController.swift"
-            timestampString = "543624303.520016"
+            timestampString = "544899442.8294539"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -263,7 +263,23 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ChildrenMonitoringSystem/ChildListTableTableViewController.swift"
-            timestampString = "543624303.5200649"
+            timestampString = "544899442.829546"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChildrenMonitoringSystem/ChildListTableTableViewController.swift"
+            timestampString = "544899442.829632"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "48"
@@ -279,39 +295,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ChildrenMonitoringSystem/ChildListTableTableViewController.swift"
-            timestampString = "543624303.520111"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ChildrenMonitoringSystem/ChildListTableTableViewController.swift"
-            timestampString = "543624303.520156"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "numberOfSections(in:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ChildrenMonitoringSystem/ChildListTableTableViewController.swift"
-            timestampString = "543624303.520201"
+            timestampString = "544899442.8297139"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "37"
@@ -327,11 +311,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ChildrenMonitoringSystem/ChildListTableTableViewController.swift"
-            timestampString = "543624303.520247"
+            timestampString = "544899442.82978"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "numberOfSections(in:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChildrenMonitoringSystem/ChildListTableTableViewController.swift"
+            timestampString = "544899442.829837"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -343,11 +343,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ChildrenMonitoringSystem/ChildListTableTableViewController.swift"
-            timestampString = "543624303.520408"
+            timestampString = "544899442.8298939"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -359,13 +359,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ChildrenMonitoringSystem/ChildLocationViewController.swift"
-            timestampString = "544113539.168107"
+            timestampString = "544899442.829953"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "locationManager(_:didUpdateLocations:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -375,13 +375,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ChildrenMonitoringSystem/ChildLocationViewController.swift"
-            timestampString = "544113539.16833"
+            timestampString = "544899442.830002"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "locationManager(_:didUpdateLocations:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -461,6 +461,166 @@
             startingLineNumber = "71"
             endingLineNumber = "71"
             landmarkName = "changePasswodBTN(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChildrenMonitoringSystem/ChildLoginViewController.swift"
+            timestampString = "544899442.830103"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "loginBTN(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChildrenMonitoringSystem/ChildLoginViewController.swift"
+            timestampString = "544899442.8301539"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "loginBTN(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChildrenMonitoringSystem/ChildLoginViewController.swift"
+            timestampString = "544899442.830202"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "loginBTN(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChildrenMonitoringSystem/ChildLoginViewController.swift"
+            timestampString = "544899442.830249"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "loginBTN(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChildrenMonitoringSystem/ChildListTableTableViewController.swift"
+            timestampString = "544899442.830296"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChildrenMonitoringSystem/ChildListTableTableViewController.swift"
+            timestampString = "544899442.830351"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChildrenMonitoringSystem/ChildLocationHistoryViewController.swift"
+            timestampString = "544899442.830407"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChildrenMonitoringSystem/ChildLocationHistoryViewController.swift"
+            timestampString = "544899442.830843"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "numberOfSections(in:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChildrenMonitoringSystem/ChildListTableTableViewController.swift"
+            timestampString = "544899442.831188"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChildrenMonitoringSystem/ChildLocationHistoryViewController.swift"
+            timestampString = "544899442.8312629"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

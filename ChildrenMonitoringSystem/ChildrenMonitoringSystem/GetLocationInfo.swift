@@ -6,9 +6,12 @@
 //
 
 import Foundation
+
+
 class GetLocationInfo{
-func getLocation(latitude : String , longitude : String){
-        let apiURL = "https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=AIzaSyAk8iSRr_NzJ_5Cajiobss0Z0IPJ28w4XY"
+    func getLocation(latitude : Double , longitude : Double){
+        let apiURL = "https://maps.googleapis.com/maps/api/geocode/json?latlng=\(latitude),\(longitude)&key=AIzaSyAk8iSRr_NzJ_5Cajiobss0Z0IPJ28w4XY"
+        var address : String = ""
         let url = URL(string: apiURL)
         let task = URLSession.shared.dataTask(with: url!){ (data, response, error) in
             if error != nil {print(error!)}
@@ -17,11 +20,9 @@ func getLocation(latitude : String , longitude : String){
                     do{
                         let jsonResult = try JSONSerialization.jsonObject(with: urlContent, options: JSONSerialization.ReadingOptions.mutableContainers) as AnyObject
                         DispatchQueue.main.async {
-                            print(jsonResult)
-//                            self.sunsignLBL.text = "\(jsonResult["sunsign"]!!)"
-//                            self.dateLBL.text = "\(jsonResult["date"]!!)"
-//                            self.sunsignImage.image = zodiacImage
-//                            self.horoscopeTF.text = "\(jsonResult["horoscope"]!!)"
+                            var streetAdd = jsonResult["results"] as? [[String: AnyObject]]
+                            address = (streetAdd![1]["formatted_address"]! as? String)!
+                            //print(res)
                         }
                     } catch{
                         print("JSON processing failed")
@@ -30,5 +31,6 @@ func getLocation(latitude : String , longitude : String){
             }
         }
         task.resume()
+   
     }
 }
