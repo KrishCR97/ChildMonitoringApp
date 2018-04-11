@@ -14,6 +14,35 @@ class AddChildViewController: UIViewController {
     @IBOutlet weak var childIDTF: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+//        import UIKit
+//        import UserNotifications
+//        class ViewController: UIViewController {
+//
+//            @IBAction func sendNotificationBTN(_ sender: UIButton) {
+//                let content = UNMutableNotificationContent()
+//                content.title = "1"
+//                content.body = "2"
+//                content.subtitle = "3"
+//                content.badge = 1
+//                let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+//                let request = UNNotificationRequest(identifier: "timerDone", content: content, trigger: trigger)
+//                UNUserNotificationCenter.current().add(request,withCompletionHandler : nil)
+//            }
+//            override func viewDidLoad() {
+//                super.viewDidLoad()
+//                // Do any additional setup after loading the view, typically from a nib.
+//                UNUserNotificationCenter.current().requestAuthorization(options: [.alert , .sound , .badge], completionHandler: {didAllow,error in
+//
+//                })
+//            }
+//
+//            override func didReceiveMemoryWarning() {
+//                super.didReceiveMemoryWarning()
+//                // Dispose of any resources that can be recreated.
+//            }
+//
+//
+//        }
 
         // Do any additional setup after loading the view.
     }
