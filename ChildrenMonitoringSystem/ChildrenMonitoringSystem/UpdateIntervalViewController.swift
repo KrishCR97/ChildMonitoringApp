@@ -8,7 +8,7 @@
 import UIKit
 
 class UpdateIntervalViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource {
-    var intervals : [Int] = [5,10,20,40,60,120,180]
+    var intervals : [String] = ["Bar","Pub","Club"]
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
