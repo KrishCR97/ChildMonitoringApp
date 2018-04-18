@@ -680,7 +680,10 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jU-hU-ieP">
                                 <rect key="frame" x="138" y="399" width="99" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Set Interval"/>
+                                <state key="normal" title="Set Location"/>
+                                <connections>
+                                    <action selector="setLocationBTN:" destination="BhR-tI-9Fu" eventType="touchUpInside" id="oGy-A0-oXa"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select time interval to update location :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qys-Kj-Qbs">
                                 <rect key="frame" x="38" y="127" width="298" height="21"/>

@@ -7,6 +7,7 @@
 
 import UIKit
 
+@available(iOS 10.0, *)
 class UpdateIntervalViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource {
     var intervals : [String] = ["Bar","Pub","Club"]
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -23,10 +24,15 @@ class UpdateIntervalViewController: UIViewController,UIPickerViewDelegate,UIPick
         print(intervals[row])
     }
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+UNUserNotificationCenter.current().requestAuthorization(options: [.alert , .sound , .badge], completionHandler: {didAllow,error in
+            
+        })
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,6 +41,17 @@ class UpdateIntervalViewController: UIViewController,UIPickerViewDelegate,UIPick
     }
     
 
+    @available(iOS 10.0, *)
+    @IBAction func setLocationBTN(_ sender: UIButton) {
+        let content = UNMutableNotificationContent()
+        content.title = "Alert From CMS APP"
+        content.body = "Your Child is at restricted premises"
+        content.subtitle = "Keep an eye on the child"
+        content.badge = 1
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        let request = UNNotificationRequest(identifier: "timerDone", content: content, trigger: trigger)
+     UNUserNotificationCenter.current().add(request,withCompletionHandler : nil)
+    }
     /*
     // MARK: - Navigation
 
