@@ -10,6 +10,7 @@ import MapKit
 
 class ChildLocationHistoryViewController: UIViewController,UITableViewDataSource{
 
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var map: MKMapView!
     static var id : String?
     var data : [ChildLocation]?
@@ -19,12 +20,29 @@ class ChildLocationHistoryViewController: UIViewController,UITableViewDataSource
 
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let whereClause = "childID = '\(ChildLocationHistoryViewController.id!)'"
-        queryBuilder!.setWhereClause(whereClause)
-        data = AppDelegate.DBInstance.backendless.data.of(ChildLocation.self).find(queryBuilder) as? [ChildLocation]
-        print(whereClause)
+       
+        //print(whereClause)
         return data!.count
         //return names.count
+    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            print(data![indexPath.row].childLocationInfo!)
+            print(data![indexPath.row].childID!)
+            print(data![indexPath.row].objectId!)
+            print(AppDelegate.DBInstance.backendless.data.of(ChildLocation.self).remove(byId: data![indexPath.row].objectId!))
+            // Delete the row from the data source
+//            AppDelegate.DBInstance.backendless.data.of(AddChild.self).remove(byId: data?[indexPath.row].objectId)
+            data?.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            //tableView.deleteRows(at: [indexPath], with: .fade)
+            tableView.reloadData()
+            
+        } else if editingStyle == .insert {
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+        }
+        
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -41,8 +59,12 @@ class ChildLocationHistoryViewController: UIViewController,UITableViewDataSource
     
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         let whereClause = "childID = '\(ChildLocationHistoryViewController.id!)'"
+        queryBuilder!.setWhereClause(whereClause)
+        data = AppDelegate.DBInstance.backendless.data.of(ChildLocation.self).find(queryBuilder) as? [ChildLocation]
+        _ = "childID = '\(ChildLocationHistoryViewController.id!)'"
         queryBuilder!.setWhereClause(whereClause)
         data = AppDelegate.DBInstance.backendless.data.of(ChildLocation.self).find(queryBuilder) as? [ChildLocation]
         var locationArr : [CLLocationCoordinate2D] = []
@@ -72,7 +94,9 @@ class ChildLocationHistoryViewController: UIViewController,UITableViewDataSource
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+       tableView.reloadData()
+    }
 
     /*
     // MARK: - Navigation

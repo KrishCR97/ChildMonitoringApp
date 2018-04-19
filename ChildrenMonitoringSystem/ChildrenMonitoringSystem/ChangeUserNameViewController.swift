@@ -9,6 +9,9 @@ import UIKit
 
 class ChangeUserNameViewController: UIViewController {
 
+    @IBOutlet weak var currentUserName: UITextField!
+    @IBOutlet weak var newUserNameTF: UITextField!
+    @IBOutlet weak var reUserName: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,7 +37,28 @@ class ChangeUserNameViewController: UIViewController {
         
     }
     @IBAction func changeUserNameBTN(_ sender: UIButton) {
-        
-        self.performSegue(withIdentifier: "unwindCUNSegue", sender: self)
+        if let cUserName = currentUserName.text , let nUserName = newUserNameTF.text , let rUserName = reUserName.text{
+            if(cUserName == AppDelegate.userName && nUserName == nUserName){
+                //Types.tryblock({ () -> Void in
+                let registeredUser = AppDelegate.DBInstance.backendless.userService.currentUser
+                print("User has been registered (SYNC): \(String(describing: registeredUser))")
+                
+                let properties = [
+                    "name" : nUserName
+                ]
+                
+                registeredUser?.updateProperties(properties)
+ AppDelegate.DBInstance.backendless.userService.update(registeredUser)
+                let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+                let mainStoryboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let viewController = mainStoryboard.instantiateViewController(withIdentifier: "userSettings") as! UserSettingsViewController
+                appDelegate.window?.rootViewController = viewController
+                
+            }
+            
+        }
+        let alert = UIAlertController(title : "Alert", message: "Enter valid User Name ",preferredStyle : UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 }

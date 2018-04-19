@@ -31,6 +31,9 @@ class LoginViewController: UIViewController {
                 let viewController = mainStoryboard.instantiateViewController(withIdentifier: "BaseTabBarController") as! BaseTabBarController
                 appDelegate.window?.rootViewController = viewController
                 AppDelegate.password = passwordTF.text!
+                print("\(AppDelegate.DBInstance.backendlessUser)")
+                //AppDelegate.DBInstance.backendlessUser
+                AppDelegate.userName = AppDelegate.DBInstance.backendless.userService.currentUser.name! as String
                 
             }
             else {

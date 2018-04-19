@@ -41,7 +41,7 @@ class ChangePasswordViewController: UIViewController {
         
         if let cPass = currentPassTF.text , let nPass = newPassTF.text , let rPass = rePassTF.text{
             if(cPass == AppDelegate.password && nPass == rPass){
-                Types.tryblock({ () -> Void in
+                //Types.tryblock({ () -> Void in
                     let registeredUser = AppDelegate.DBInstance.backendless.userService.currentUser
                     print("User has been registered (SYNC): \(String(describing: registeredUser))")
 
@@ -50,25 +50,37 @@ class ChangePasswordViewController: UIViewController {
                     ]
 
                     registeredUser?.updateProperties(properties)
-Types.tryblock({ () -> Void in
-    _ = AppDelegate.DBInstance.backendless.userService.update(registeredUser)
-    
-}, catchblock: {(exception) ->Void in
-    
-    print("In the exception")
-})
-                    
-//                    print("User updated (SYNC): \(String(describing: updatedUser))")
+//Types.tryblock({ () -> Void in
+//    _ = AppDelegate.DBInstance.backendless.userService.update(registeredUser)
+//    self.performSegue(withIdentifier: "unwindSegue", sender: self)
 //
-                },catchblock: { (exception) -> Void in
-                    print("Server reported an error: \(String(describing: exception))" )
-                })
-            }
-
-        }
+//}, catchblock: {(exception) ->Void in
+//
+//    print("In the exception")
+//})
+//
+////                    print("User updated (SYNC): \(String(describing: updatedUser))")
+////
+//                },catchblock: { (exception) -> Void in
+//                    print("Server reported an error: \(String(describing: exception))" )
+//                })
+//            }
+//
+//        }
 //        print("out of if")
-     self.performSegue(withIdentifier: "unwindSegue", sender: self)
+     //self.performSegue(withIdentifier: "unwindSegue", sender: self)
+        AppDelegate.DBInstance.backendless.userService.update(registeredUser)
+                let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+                let mainStoryboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let viewController = mainStoryboard.instantiateViewController(withIdentifier: "userSettings") as! UserSettingsViewController
+                appDelegate.window?.rootViewController = viewController
+
+            }
+            
+        }
+        let alert = UIAlertController(title : "Alert", message: "Enter valid Password ",preferredStyle : UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
         
     }
-    
 }

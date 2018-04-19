@@ -30,6 +30,12 @@ class UserSettingsViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func logOutBTN(_ sender: UIButton) {
+        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        let mainStoryboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = mainStoryboard.instantiateViewController(withIdentifier: "logInScreen") as! LoginViewController
+        appDelegate.window?.rootViewController = viewController
+    }
     @IBAction func unwindSegue(segue:UIStoryboardSegue) {
         
     }

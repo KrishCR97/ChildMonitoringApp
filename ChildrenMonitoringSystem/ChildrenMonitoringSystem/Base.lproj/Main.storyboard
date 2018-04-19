@@ -12,7 +12,7 @@
         <!--Child Monitoring  System Login-->
         <scene sceneID="bYt-wW-UqU">
             <objects>
-                <viewController id="cmo-tx-ZTT" customClass="LoginViewController" customModule="ChildrenMonitoringSystem" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="logInScreen" id="cmo-tx-ZTT" customClass="LoginViewController" customModule="ChildrenMonitoringSystem" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3u5-mj-wwY"/>
                         <viewControllerLayoutGuide type="bottom" id="BId-Xh-Il3"/>
@@ -307,7 +307,7 @@
         <!--User Settings-->
         <scene sceneID="SK8-CV-ML8">
             <objects>
-                <viewController id="HMr-4d-K8q" customClass="UserSettingsViewController" customModule="ChildrenMonitoringSystem" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="userSettings" id="HMr-4d-K8q" customClass="UserSettingsViewController" customModule="ChildrenMonitoringSystem" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uJu-BF-TGQ"/>
                         <viewControllerLayoutGuide type="bottom" id="2al-FN-x4R"/>
@@ -347,6 +347,14 @@
                                 <rect key="frame" x="124" y="389" width="126" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UvH-X2-AoW">
+                                <rect key="frame" x="162" y="562" width="51" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="LogOut"/>
+                                <connections>
+                                    <action selector="logOutBTN:" destination="HMr-4d-K8q" eventType="touchUpInside" id="ejO-xY-PFp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
@@ -438,6 +446,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
+                        <outlet property="currentUserName" destination="1R4-e4-WOE" id="vOc-7W-f3B"/>
+                        <outlet property="newUserNameTF" destination="Dvi-aZ-xmi" id="9R6-bh-KJM"/>
+                        <outlet property="reUserName" destination="HMR-Sl-AG3" id="GFd-ny-zdq"/>
                         <segue destination="A53-Vd-1ha" kind="unwind" unwindAction="unwindSegueWithSegue:" id="yMF-9f-UfD"/>
                     </connections>
                 </viewController>
@@ -563,28 +574,21 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UserName:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBr-Ng-YSf">
-                                <rect key="frame" x="30" y="348" width="99" height="21"/>
+                                <rect key="frame" x="8" y="348" width="99" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EmailID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IwU-jN-F2s">
-                                <rect key="frame" x="30" y="398" width="99" height="21"/>
+                                <rect key="frame" x="8" y="398" width="63" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICm-O2-FxU">
-                                <rect key="frame" x="166" y="348" width="193" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fd6-8U-yQn">
-                                <rect key="frame" x="166" y="398" width="193" height="21"/>
+                                <rect key="frame" x="108" y="348" width="193" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -597,6 +601,21 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2M7-h5-mer">
+                                <rect key="frame" x="162" y="553" width="51" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="LogOut"/>
+                                <connections>
+                                    <action selector="logOutBTN:" destination="Unt-hF-veq" eventType="touchUpInside" id="2Is-rN-YIK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fd6-8U-yQn">
+                                <rect key="frame" x="79" y="398" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
@@ -666,7 +685,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Update Frequency" id="dWe-nF-aIF"/>
+                                    <navigationItem title="Restricted Location" id="dWe-nF-aIF"/>
                                 </items>
                             </navigationBar>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2xE-Bu-GQH">
@@ -685,8 +704,8 @@
                                     <action selector="setLocationBTN:" destination="BhR-tI-9Fu" eventType="touchUpInside" id="oGy-A0-oXa"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select time interval to update location :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qys-Kj-Qbs">
-                                <rect key="frame" x="38" y="127" width="298" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select restricted the restricted zone :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qys-Kj-Qbs">
+                                <rect key="frame" x="38" y="127" width="284" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -858,6 +877,7 @@
                     </view>
                     <connections>
                         <outlet property="map" destination="ugy-or-iY3" id="64f-r0-TVM"/>
+                        <outlet property="tableView" destination="KgS-NT-r4r" id="fjk-cw-b8R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="43r-MW-yHW" userLabel="First Responder" sceneMemberID="firstResponder"/>

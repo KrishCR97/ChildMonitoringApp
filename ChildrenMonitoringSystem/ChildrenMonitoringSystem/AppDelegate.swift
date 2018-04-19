@@ -8,6 +8,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     static var DBInstance = DatabaseManager.getDBInstance()
     static var password = ""
     static var childID = ""
+    static var userName = ""
   
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
