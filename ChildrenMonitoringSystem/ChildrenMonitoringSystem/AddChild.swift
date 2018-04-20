@@ -12,4 +12,5 @@ class AddChild : NSObject {
     var childName : String?
     var emailID : String?
     var objectId : String?
+    var timeInterval = 5
 }

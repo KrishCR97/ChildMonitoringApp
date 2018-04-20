@@ -7,8 +7,24 @@
 
 import UIKit
 
-class AddChildViewController: UIViewController {
+class AddChildViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource {
+    let childRef : AddChild = AddChild()
+    let interval : [Int] = [5,10,15,20,25,30,60,120,180]
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return "\(interval[row])"
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return interval.count
+    }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        childRef.timeInterval = interval[row]
+    }
 
+    @IBOutlet weak var timePicker: UIPickerView!
     @IBOutlet weak var childNameTF: UITextField!
     
     @IBOutlet weak var childIDTF: UITextField!
@@ -56,7 +72,7 @@ class AddChildViewController: UIViewController {
     
         
         if childNameTF.text! != "" && childIDTF.text! != "" {
-            let childRef : AddChild = AddChild()
+            
             childRef.childID = childIDTF.text!
             childRef.childName = childNameTF.text!
             childRef.emailID = AppDelegate.DBInstance.backendless.userService.currentUser.email! as String
