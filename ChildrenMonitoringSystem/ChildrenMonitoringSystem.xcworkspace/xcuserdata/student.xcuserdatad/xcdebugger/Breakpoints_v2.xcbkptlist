@@ -535,13 +535,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ChildrenMonitoringSystem/ChildLocationHistoryViewController.swift"
-            timestampString = "545792613.700961"
+            timestampString = "545926768.512988"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "25"
             endingLineNumber = "25"
-            landmarkName = "tableView(_:numberOfRowsInSection:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -551,13 +551,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ChildrenMonitoringSystem/ChildLocationHistoryViewController.swift"
-            timestampString = "545792613.701052"
+            timestampString = "545926768.513934"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "57"
             endingLineNumber = "57"
-            landmarkName = "numberOfSections(in:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -583,13 +583,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ChildrenMonitoringSystem/ChildLocationHistoryViewController.swift"
-            timestampString = "545792613.7011631"
+            timestampString = "545926768.514487"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "76"
             endingLineNumber = "76"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -935,13 +935,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ChildrenMonitoringSystem/ChildLocationHistoryViewController.swift"
-            timestampString = "545792613.702409"
+            timestampString = "545926768.515251"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "33"
             endingLineNumber = "33"
-            landmarkName = "tableView(_:commit:forRowAt:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -951,13 +951,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ChildrenMonitoringSystem/ChildLocationHistoryViewController.swift"
-            timestampString = "545792613.702466"
+            timestampString = "545926768.515774"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "41"
             endingLineNumber = "41"
-            landmarkName = "tableView(_:commit:forRowAt:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -967,13 +967,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ChildrenMonitoringSystem/ChildLocationHistoryViewController.swift"
-            timestampString = "545792613.70252"
+            timestampString = "545926768.516265"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "37"
             endingLineNumber = "37"
-            landmarkName = "tableView(_:commit:forRowAt:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -983,13 +983,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ChildrenMonitoringSystem/ChildLocationHistoryViewController.swift"
-            timestampString = "545792613.7025729"
+            timestampString = "545926768.516627"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "45"
             endingLineNumber = "45"
-            landmarkName = "tableView(_:commit:forRowAt:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -999,13 +999,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ChildrenMonitoringSystem/ChildLocationHistoryViewController.swift"
-            timestampString = "545792613.702626"
+            timestampString = "545926768.5169311"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "44"
             endingLineNumber = "44"
-            landmarkName = "tableView(_:commit:forRowAt:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1015,13 +1015,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ChildrenMonitoringSystem/ChildLocationHistoryViewController.swift"
-            timestampString = "545792613.702711"
+            timestampString = "545926768.517163"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "39"
             endingLineNumber = "39"
-            landmarkName = "tableView(_:commit:forRowAt:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
